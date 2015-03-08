@@ -1,0 +1,28 @@
+html  {
+  background-color: #ffffff;
+  font-family: Futura-pt;
+}
+h1  {
+  font-family: Helvetica;
+  font-size: 36px;
+  margin-left: 38px;
+  font-weight: 700;
+}
+h3  {
+  font-size: 17px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+div {
+  height: 360px;
+  width: 480px;
+  border: 2px solid black;
+  margin-top: -300px;
+  margin-right: 50px;
+  float: right;
+}
+ul  {
+  margin-top: 150px;
+  margin-left: 40px;
+  font-size: 24px;
+}
