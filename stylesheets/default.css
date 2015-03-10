@@ -1,0 +1,48 @@
+.hbox {
+  border: 1px solid black;
+  padding: 1em;
+  background-color: #b2bab8;
+  font-family: Oswald
+}
+.NavBar {
+display: inline;
+float: left;
+width: 7em;
+background-color: #b2bab8;
+}
+li  {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+  background-color:
+}
+ul  {
+  margin-left: -20px;
+}
+#searchbox
+{
+    background-color: #b2bab8;
+    #background-image: linear-gradient(#b2bab8, #d4e8ec);
+    #border-radius: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    float: right;
+    margin-right: 20px;
+    #margin: 100px auto 50px;
+    #overflow: hidden; /* Clear floats */
+}
+.LPost {
+width: 480px;
+margin-top: 60px;
+padding-left:-50px;
+}
+.Flink {
+  padding-right:-50px;
+}
+td {
+  padding: 50px;
+}
