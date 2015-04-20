@@ -1,28 +1,48 @@
+html{
+  background-color: #F0F0F0;
+  background: url("../../phase-0-unit-1/week-2/imgs/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .hbox {
   border: 1px solid black;
   padding: 1em;
-  background-color: #b2bab8;
-  font-family: Oswald
+  background-color: #B8B7B7;
+  font-family: Oswald;
+  border-radius: 15px;
+  background-image: linear-gradient(/*#b2bab8*/ #000000, #ffffff);
+  margin-top: -3px;
+  width: 95%;
+}
+h1{
+  color: #ffffff;
 }
 .NavBar {
+color: #ffffff;
 display: inline;
 float: left;
 width: 7em;
-background-color: #b2bab8;
+background-color: #B8B7B7;
+border-radius: 7px;
+background-image: linear-gradient(#000000, #ffffff);
 }
 li  {
   border: 1px solid black;
   text-align: center;
   padding: 5px;
+  list-style-type: none;
+  /*border-radius: 10px;*/
 }
 ul  {
   margin-left: -20px;
 }
 #searchbox
 {
-    background-color: #b2bab8;
-    #background-image: linear-gradient(#b2bab8, #d4e8ec);
-    #border-radius: 35px;
+    background-color: #B8B7B7;
+    background-image: linear-gradient(#000000, #ffffff);
+    border-radius: 12px;
     border-width: 1px;
     border-style: solid;
     border-color: #c4d9df #a4c3ca #83afb7;
@@ -37,38 +57,43 @@ ul  {
 width: 480px;
 #margin-top: 60px;
 #padding-left:-50px;
-border-color: #b2bab8;
+border-color: #D0D0D0;
+border-radius: 10px;
 
 }
 .FLink {
   #padding-right:-50px;
   border: 1px solid black;
-  border-radius: 1px;
+  border-radius: 10px;
   float: right;
   margin-left: 55px;
   margin-top: 3em;
   width: 37%;
   position: absolute;
-  border-color: #b2bab8;
+  border-color: #D0D0D0;
+  background-image: linear-gradient(#000000, #ffffff);
+  color: #ffffff;
 }
 td {
   padding: 50px;
+  border-radius: 10px;
 }
 table {
-  #background-color: #b2bab8;
+  #background-color: #D0D0D0;
 
 }
 .FVideo {
   #padding-right:-50px;
   border: 1px solid black;
-  #border-radius: 1px;
+  border-radius: 10px;
   float: right;
   margin-left: 55px;
   margin-top: -6em;
   width: 37%;
   position: absolute;
-  border-color: #b2bab8;
-
+  border-color: #D0D0D0;
+  background-image: linear-gradient(#000000, #ffffff);
+  color: #ffffff;
 }
 a:visited {
   color: red;
@@ -79,23 +104,39 @@ a:hover {
 .RBPosts {
   #padding-right:-50px;
   border: 1px solid black;
-  #border-radius: 1px;
+  border-radius: 10px;
   float: right;
   margin-left: 45px;
   margin-top: 0em;
   width: 30%;
   position: absolute;
-  border-color: #b2bab8;
+  border-color: #D0D0D0;
+  background-image: linear-gradient(#000000, #ffffff);
+  color: #ffffff;
 }
 .Arch {
   #padding-right:-50px;
   border: 1px solid black;
-  #border-radius: 1px;
+  border-radius: 10px;
   float: right;
   #margin-left: 400px;
   margin-right: -622px;
   #margin-top: -6em;
   width: 80%;
   #position: absolute;
-  border-color: #b2bab8;
+  border-color: #D0D0D0;
+  background-image: linear-gradient(#000000, #ffffff);
+  color: #ffffff;
+}
+img {
+  color: #ffffff;
+  border-radius: 10px;
+}
+h3 {
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+}
+ul li {
+  border-radius: 10px;
 }
