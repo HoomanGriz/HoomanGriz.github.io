@@ -1,11 +1,35 @@
 html  {
-  background-color: #ffffff;
-  font-family: Futura-pt;
+  background-color: #F0F0F0;
+  background: url("../../phase-0-unit-1/week-2/imgs/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hbox {
+  border: 1px solid black;
+  padding: 1em;
+  background-color: #B8B7B7;
+  font-family: Oswald;
+  border-radius: 15px;
+  background-image: linear-gradient(/*#b2bab8*/ #000000, #ffffff);
+  margin-top: -3px;
+  width: 95%;
+}
+.NavBar {
+color: #ffffff;
+display: inline;
+float: left;
+width: 7em;
+background-color: #B8B7B7;
+border-radius: 7px;
+background-image: linear-gradient(#000000, #ffffff);
 }
 h1  {
+  color: #ffffff;
   font-family: Helvetica;
   font-size: 36px;
-  margin-left: 38px;
+  margin-left: -5px;
   font-weight: 700;
 }
 h3  {
@@ -13,16 +37,47 @@ h3  {
   margin-top: 10px;
   margin-left: 40px;
 }
-div {
+/*div {
   height: 360px;
   width: 480px;
   border: 2px solid black;
   margin-top: -300px;
   margin-right: 50px;
   float: right;
+}*/
+li  {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+  list-style-type: none;
+  /*border-radius: 10px;*/
 }
 ul  {
-  margin-top: 150px;
-  margin-left: 40px;
-  font-size: 24px;
+  margin-left: -20px;
+ul li {
+  border-radius: 10px;
+}
+#searchbox
+{
+    background-color: #B8B7B7;
+    background-image: linear-gradient(#000000, #ffffff);
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    float: right;
+    /*margin-right: 20px;
+    #margin: 100px auto 50px;*/
+}
+#Post_Title {
+  margin-top: 100px;
+}
+h2 {
+  font-size: 36px;
+  margin-top: 2000px;
+  clear: auto;
+  float:auto;
 }
