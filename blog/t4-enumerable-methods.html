@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<title>Hooman Bargrizan | Developer | Metaphysicist | Soul Rebel</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css" />
+  <h1 class="hbox">Hooman Bargrizan</h1>
+</head>
+    <ul>
+      <li class="NavBar">Home</li>
+      <li class="NavBar">Photos</li>
+      <li class="NavBar">About</li>
+      <li class="NavBar">Contact</li>
+    </ul><br/>
+  <!-- <form id="searchbox" action="#">
+    <input id="search" type="text" placeholder="Type here">
+    <input id="submit" type="submit" value="Search">
+  </form> -->
+<main>
+  <!-- <h1>Post Title</h1> -->
+  <br/><br/>
+  <h2>Enumerable Methods</h2>
+  <h4>May 3, 2015</h4><br/>
+  <section>
+    <p>
+<a href="blog-imgs/E-Map.png" />
+   </p>
+   <p> The map method in Ruby is an invaluable tool that you will likely use in Ruby learning for many years to come.
+   </p>
+   <p>As you can see in the screenshot above (taken from <a href="http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-map">Ruby Docs</a>), the map method takes a block of code and applies it to each object that you pass to it. As a result, it returns the results in a new array which can be very useful when you are looking for a non-destructive way to accomplish something. If n block is given, an enumerator is returned instead.
+   </p>
+   <p>If you've ever spent hours running the same repetitive code over different elements in an array, or needed a way to iterate over arguments and pass them through a block, then you have probably considered .map. If not, then you really should.
+   </p>
+   <p>Let's go over the screenshot above to give you an idea of how map works, step by step.
+   </p>
+   <p>In our example we have:</p>
+    <p>(1..4).map { |i| i*i}</p>
+    <p>Starting from the beginning we see that the elements that we're working with are a range of integers, from 1 to 4. So using 1, 2, 3, and 4 as our elements, we then take these elements individually and pass them through the block of code that we've defined for this map. The arbitrary |i| can be any variable and is simply defining the individual element being passed through. So with the first element i=1, with the second i=2, and so on and so forth.
+    </p>
+    <p>Now that we see how the format works, let's run the elements through and see what our output would look like. So with a code block of |i| i*i, and an array of integers with a range of 1-4, what we are essentially doing is this:
+    </p>
+    <p>|1| 1*1</p>
+    <p>|2| 2*2</p>
+    <p>|3| 3*3</p>
+    <p>|4| 4*4</p>
+    <p>As I mentioned above, the map method returns a new array. So when each object is passed through the block, it's result is stored in a new array after each permutation. Since we're doing this step by step let's take a look at how this happening step by step.</p>
+    <p> So we start with the first object passed through:</p>
+    <p>|1| 1*1   #=>   [1]</p>
+    <p>We can see that the 1 was passed through the block and, the code, (the multiplication of itself) was calculated. What we also see is that output was stored in a new array. To better understand what's going on here, I'm going to run through each of calculations and show you what is happening everytime a new object is passed through. Pay attention to the objects in the new array.</p>
+    <p>|1| 1*1  #=>  [1]</p>
+    <p>|2| 2*2  #=>  [1, 4]</p>
+    <p>|3| 3*3  #=>  [1, 4, 9]</p>
+    <p>|4| 4*4  #=>  [1, 4, 9, 16]</p>
+    <p> I wrote this out this way so that you could see how each object is handled individually but similarly. Everytime a new object is run through the block, its output is added to the new array. Simple, right? Now let's look at how we accompished so much with so little code. We could have typed out the calculations for each object individually and then taken their outputs and stored them in a new array that we'd have to create or we could simply write: (1..4).map { |i| i*i} and have Ruby do all of the work. If you can't tell from my lack of desire to actually write out a calculation for each and every object and then having to create a new array to store each of these values, I prefer the map method.</p>
+    <p>As we all know, there are many different ways that we can all come to the same answer on the same questions or coding challenges. In the end however, its always the one that gets the job done right and with as litle effort as possible that wins the race in programming. Use what Ruby offers you built in to itself and you'll notice that you're finishing your work a lot faster, leaving more time to waste researching how to make whiskey at home....or whatever.</p>
+  </section>
+</main>
+
