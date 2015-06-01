@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+<title>SQL Cheat Sheet</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="cheat-sheet.css" />
+  <img src="../phase-0-unit-3/week-8/SQL_img.jpeg" alt="SQL"/>
+  <h1>Structured Query Language (SQL)</h1>
+</head>
+
+<main>
+  <br/><br/>
+  <h2>SQL Cheat Sheet </h2>
+  <section>
+    <p>
+      SQL (pronounced "Sequel") stands for Structured Query Language. It is written in an ANSI standard computer language and allows you to access and manipulate data in a database. Some popular databases that use SQL are Oracle, Sybase, Microsoft SQL Server, DB2, Access, MySQL, and PostgreSQL. Below you will find some basic commands to help you become a more efficient SQL user. Please note that the commands are in all caps for easier reading. SQL can recognize your commands in either case.
+   </p>
+
+  <table>
+    <tr><td><h3>Database Manipulation</h3></td></tr>
+    <tr>
+      <td class="Table">CREATE DATABASE database_name</td>
+      <td>Creates a database</td>
+      <td>ex. CREATE DATABASE My_Cheat_Sheet
+    </tr>
+    <tr>
+      <td>DROP DATABASE database_name</td>
+      <td> Deletes a database</td>
+      <td> ex. DROP DATABASE My_Cheat_Sheet</td>
+    </tr>
+    <tr><td><h3>Table Manipulation</h3></td></tr>
+    <tr>
+      <td>CREATE TABLE "table_name" ("column_1" "data_type_for_column_1", "column_2" "data_type_for_column_2", ...)
+      </td>
+      <td>Creates a table in the database</td>
+      <td>CREATE TABLE Any_Person (LastName varchar, FirstName varchar, Age int)
+      </td>
+    </tr>
+    <tr>
+      <td>ALTER TABLE table_name ADD column_name datatype(*optional* max number of chars)
+      </td>
+      <td>Add columns in an existing table</td>
+      <td>ALTER TABLE Any_Person ADD Address varchar(12)
+      </td>
+    </tr>
+    <tr>
+      <td>ALTER TABLE table_name DROP column_name datatype
+      </td>
+      <td>Delete columns in an existing table
+      </td>
+      <td>ALTER TABLE Any_Person DROP Address varchar(12)
+      </td>
+    </tr>
+    <tr>
+      <td>DROP TABLE table_name
+      </td>
+      <td>Delete a table
+      </td>
+      <td>DROP TABLE Any_Person
+      </td>
+    </tr>
+    <tr><td><h3>Index Manipulation</h3></td></tr>
+    <tr>
+      <td>CREATE INDEX index_name ON table_name (column_name_1, column_name_2, ...)
+      </td>
+      <td>Create a simple index
+      </td>
+      <td>CREATE INDEX PersonIndex ON Any_Person (LastName, FirstName)
+      </td>
+    </tr>
+    <tr>
+      <td>DROP INDEX table_name.index_name
+      </td>
+      <td>Delete an index
+      </td>
+      <td>DROP INDEX Any_Person.PersonIndex
+      </td>
+    </tr>
+    <tr><td><h3>Data Manipulation</h3></td></tr>
+    <tr>
+      <td>INSERT INTO table_name VALUES (value_1, value_2,...)
+      </td>
+      <td>Insert new rows into a table
+      </td>
+      <td>INSERT INTO Any_Person VALUES("Wozniak", "Steve", 64) OR </br> INSERT INTO Any_Person(LastName, FirstName, Age) VALUES ("Wozniak", "Steve", 64)
+      </td>
+    </tr>
+    <tr>
+      <td>DELETE FROM table_name WHERE column_name = some_value
+      </td>
+      <td>Delete rows in a table
+      </td>
+      <td>DELETE FROM Any_Person WHERE LastName = "Wozniak"
+      </td>
+    </tr>
+    <tr>
+      <td>TRUNCATE TABLE table_name
+      </td>
+      <td>Deletes the data inside the table
+      </td>
+      <td>TRUNCATE TABLE Any_Person
+      </td>
+    </tr>
+    <tr><td><h3>Select</h3></td></tr>
+    <tr>
+      <td>SELECT column_name(s) FROM table_name</br> SELECT * FROM table_name
+      </td>
+      <td>Select data from a table</br>Select all data from a table
+      </td>
+      <td>SELECT LastName, FirstName FROM Any_Person</br>SELECT * FROM Any_Person
+      </td>
+    </tr>
+    <tr>
+      <td>SELECT column_name(s) FROM table_name WHERE column operator value AND column operator value OR column operator value...
+      </td>
+      <td>Selects data using different operators. You can use =, <>(not equal), >, <, >=, <=, BETWEEN, and LIKE (when looking for a pattern)
+      </td>
+      <td>SELECT * FROM Any_Person WHERE (FirstName="Alison" OR FirstName= "Ali") AND LastName="Cox"</br>SELECT * FROM Any_Person WHERE FirstName LIKE "Ali%"
+      </td>
+    </tr>
+    <tr>
+      <td>SELECT column_1 FROM table_name ORDER BY column_name
+      </td>
+      <td>Selects data and orders it by the column.
+      </td>
+      <td>SELECT LastName, FirstName FROM Any_Person ORDER BY FirstName
+      </td>
+    </tr>
+    <tr><td><h3>Join</h3></td></tr>
+    <tr>
+      <td>SELECT column_1, column_2 FROM first_table_name INNER JOIN second_table_name ON first_table_name.keyfield = second_table_name.keyfield
+      </td>
+      <td>The INNER JOIN will join two table based on a shared key and return matching rows for the request
+      </td>
+      <td>SELECT Employees.LastName, Any_Person.Age FROM Employees INNER JOIN Any_Person ON Employees.Employee_ID=Any_Person.ID
+      </td>
+    </tr>
+  </table>
+  </section>
+</main>
+</br>
+<footer>
+  <div>©2015 Hooman Bargrizan - 2015 Bumblebees Cohort</div>
+  <div>For DevBootcamp Cheat Sheet Exercise</div>
+  <div>References by <a href="http://www.sql-tutorial.net/sql-cheat-sheet.pdf">SQL Tutorial</a> and <a href="http://www.sql.su">SQL In One Page</a>
+  </div>
+  </footer>
