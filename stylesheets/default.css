@@ -1,5 +1,6 @@
 html{
-  background-color: #F0F0F0;
+  font-family: Optima;
+  background-color: #ffffff;
   background: url("../blog-imgs/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7,14 +8,22 @@ html{
   background-size: cover;
 }
 .hbox {
-  border: 1px solid black;
-  padding: 1em;
-  background-color: #B8B7B7;
-  font-family: Oswald;
+  /*border: 1px solid black;*/
+  padding: 0em;
+  /*background-color: #;*/
+  font-family: Optima;
+  font-size: 50px;
+  color: #FFFF00;
   border-radius: 15px;
-  background-image: linear-gradient(/*#b2bab8*/ #000000, #ffffff);
+  /*background-image: linear-gradient(/*#b2bab8*/ #000000, #ffffff);*/
   margin-top: -3px;
-  width: 95%;
+  margin-left: 50px;
+  width: 87%;
+}
+.hbox2 {
+  font-size: 25px;
+  float: right;
+  margin-top: 20px;
 }
 h1{
   color: #ffffff;
@@ -23,63 +32,70 @@ h1{
 color: #ffffff;
 display: inline;
 float: left;
-width: 7em;
-background-color: #B8B7B7;
-border-radius: 7px;
-background-image: linear-gradient(#000000, #ffffff);
+width: 6em;
+font-weight: bold;
+/*background-color: #B8B7B7;*/
+border-radius: 8px;
+/*background-image: linear-gradient(#000000, #ffffff);*/
+margin-left: 15px;
+border: 1px /*solid yellow*/;
 }
 li  {
-  border: 1px solid black;
+  /*border: 1px;*/
   text-align: center;
-  padding: 5px;
+  /*padding: 5px;*/
   list-style-type: none;
   /*border-radius: 10px;*/
 }
 ul  {
-  margin-left: -20px;
+  /*margin-left: -20px;*/
 }
 #searchbox
 {
-    background-color: #B8B7B7;
-    background-image: linear-gradient(#000000, #ffffff);
+    /*background-color: #B8B7B7;
+    background-image: linear-gradient(#000000, #ffffff);*/
     border-radius: 12px;
     border-width: 1px;
     border-style: solid;
-    border-color: #c4d9df #a4c3ca #83afb7;
+    /*border-color: #c4d9df #a4c3ca #83afb7;*/
     width: 200px;
     height: 20px;
     padding: 10px;
     float: right;
-    margin-right: 20px;
+    margin-right: 50px;
     #margin: 100px auto 50px;
 }
+#search {
+  font-family: Optima;
+}
 .LPost {
-width: 480px;
-#margin-top: 60px;
-#padding-left:-50px;
-border-color: #D0D0D0;
-border-radius: 10px;
-
+font-size: 28px;
+float: both;
+text-align: center;
+margin-top: 4em;
+margin-left: 50px;
+color: #ffffff;
+/*font-weight: 800;*/
 }
 .FLink {
-  #padding-right:-50px;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 1px /*solid yellow*/;
+  border-radius: 100px;
+  /*display: flex;*/
   float: right;
-  margin-left: 55px;
-  margin-top: 3em;
-  width: 37%;
-  position: absolute;
-  border-color: #D0D0D0;
-  background-image: linear-gradient(#000000, #ffffff);
+  margin-left: 1000px;
+  margin-top: 2em;
+  padding-right: 30px;
+  width: 10em;
   color: #ffffff;
+  /*text-align: left;*/
+  /*position: absolute;*/
 }
 td {
-  padding: 50px;
-  border-radius: 10px;
+  /*padding: 50px;
+  border-radius: 10px;*/
 }
 table {
-  #background-color: #D0D0D0;
+  /*#background-color: #D0D0D0;*/
 
 }
 .FVideo {
@@ -95,14 +111,29 @@ table {
   background-image: linear-gradient(#000000, #ffffff);
   color: #ffffff;
 }
+a {
+  text-decoration: none;
+}
 a:visited {
-  color: red;
+  color: white;
 }
 a:hover {
-  color:purple;
+  color:yellow;
 }
 .RBPosts {
-  #padding-right:-50px;
+  border: 1px /*solid yellow*/;
+  border-radius: 100px;
+  /*display: flex;*/
+  float: left;
+  /*margin-left: 1000px;*/
+  margin-left: -190px;
+  margin-top: 2em;
+  /*padding-right: 30px;*/
+  width: 10em;
+  color: #ffffff;
+  /*text-align: left;*/
+  /*position: absolute;*/
+  /*#padding-right:-50px;
   border: 1px solid black;
   border-radius: 10px;
   float: right;
@@ -112,10 +143,20 @@ a:hover {
   position: absolute;
   border-color: #D0D0D0;
   background-image: linear-gradient(#000000, #ffffff);
-  color: #ffffff;
+  color: #ffffff;*/
 }
 .Arch {
-  #padding-right:-50px;
+  border: 1px /*solid yellow*/;
+  border-radius: 100px;
+  /*display: flex;*/
+  float: right;
+  margin-left: 1000px;
+  margin-top: 2em;
+  padding-right: 30px;
+  width: 10em;
+  color: #ffffff;
+
+  /*#padding-right:-50px;
   border: 1px solid black;
   border-radius: 10px;
   float: right;
@@ -126,17 +167,25 @@ a:hover {
   #position: absolute;
   border-color: #D0D0D0;
   background-image: linear-gradient(#000000, #ffffff);
-  color: #ffffff;
+  color: #ffffff;*/
 }
-img {
+/*img {
   color: #ffffff;
   border-radius: 10px;
-}
+}*/
 h3 {
-  background-color: #000000;
-  padding: 10px;
+  /*background-color: #000000;*/
+  /*padding: 10px;*/
   border-radius: 10px;
 }
 ul li {
-  border-radius: 10px;
+  /*border-radius: 10px;*/
+}
+footer {
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  width: 90%;
+  margin-left: 50px;
+  margin-top: 200px;
 }
